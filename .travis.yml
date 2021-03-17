@@ -4,7 +4,6 @@ branches:
   except:
     - gh-pages
 arch: 
-  - amd64
   - arm64
 python:
   - "2.7"
@@ -12,7 +11,7 @@ addons:
   apt:
     packages:
     - build-essential
-    - libzmq-dev
+    - libzmq3-dev
 install: ./install-dependencies.sh
 script:
   nosetests --with-coverage --cover-package=beaver
