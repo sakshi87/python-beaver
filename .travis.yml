@@ -5,8 +5,9 @@ branches:
     - gh-pages
 arch: 
   - arm64
+  - amd64
 python:
-  - "2.7"
+  - "3.7"
 addons:
   apt:
     packages:
